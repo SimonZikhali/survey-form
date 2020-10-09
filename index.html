@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>survey form</title>
+  </head>
+  <body>
+    <h1 id="title">LADYSMITH BLACK MAMBAZO SURVEY FORM</h1>
+    <p id="description">Ladysmith Black Mambazo is the best Cappella Group in Africa</p>
+    <form id="survey-form">
+      
+      <div class="space">
+       <label for="name" id="name-label">name: </label><br>
+       <input type="text" id="name"placeholder="Enter your name"required>
+      </div> 
+
+      <div class="space">
+        <label for="email" id="email-label">email: </label><br>
+        <input type="email" id="email"placeholder="Enter your email"required>
+      </div>
+
+      <div class="space">
+        <label for="number" id="number-label">age: </label><br>
+        <input type="number" id="number"placeholder="age" min="18" max="30">
+      </div>
+
+      <select id="dropdown">
+        <option>Select your Favourite Album</option>
+        <option value="Album1" >In Harmony</option>
+        <option value="Album2" >Kobuye Kulunge</option>
+        <option value="Album3" >Long Walk to Freedom</option>
+        <option value="Album4" >UShaka</option>
+      </select>
+      
+      <field>
+        <legend>Would you like to see Ladysmith Black Mambazo Live    performance?</legend>
+        <input type="radio" name="Live performance"      value="Definitely"> 
+        <label for="Definitely">Definitely</label>
+        <input type="radio" name="Live performance" value="Maybe">
+        <label for="Maybe">Maybe</label>
+        <input type="radio" name="Live performance" value="Not sure">      <label for="Not sure">Not sure</label>
+      </field>
+      
+      <select id="dropdown">
+        <option >select an option </option>
+        <option value="Song1" >Video</option>
+        <option value="Song2" >Audio</option>
+        <option value="Song3" >Mp3</option>
+     </select> 
+       
+      <div class="space">
+        <field>
+          <legend>Just tick your favorite songs</legend><br>
+          <input type="checkbox" name="Song" value="1">
+          <label for="song">Hello my baby</label><br>
+          <input type="checkbox" name="Song" value="2">
+          <label for="song">Rain rain beautiful rain</label><br>
+          <input type="checkbox" name="Song" value="1">
+          <label for="song">Unomathemba</label><br>
+          <input type="checkbox" name="Song" value="1"> 
+          <label for="song">Nkosi sikelela iAfrica Shosholoza</label><br>
+          <input type="checkbox" name="Song" value="1">
+          <label for="song">Thandiwe wami</label>
+        </field>
+      </div>
+      <textarea id="comments" id="comments">Enter your comment...</textarea><br>
+    
+      <button id="submit">"Submit"</button>
+                              
+    </form> 
+  </body>
+</html>
